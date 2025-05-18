@@ -1,0 +1,21 @@
+meta {
+  name: recovery
+  type: http
+  seq: 10
+}
+
+post {
+  url: https://fake-trello-api.herokuapp.com/api/v1/auth/recovery
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+  	"email": "admin@mail.com"
+  }
+}

@@ -1,0 +1,21 @@
+meta {
+  name: isAvailable
+  type: http
+  seq: 9
+}
+
+post {
+  url: https://fake-trello-api.herokuapp.com/api/v1/auth/is-available
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+  	"email": "admin@admin.com"
+  }
+}

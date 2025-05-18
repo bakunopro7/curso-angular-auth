@@ -1,0 +1,19 @@
+meta {
+  name: getAll
+  type: http
+  seq: 3
+}
+
+get {
+  url: https://fake-trello-api.herokuapp.com/api/v1/users/
+  body: none
+  auth: bearer
+}
+
+params:query {
+  limit: 3
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsImlhdCI6MTY1ODQwOTgyMCwiZXhwIjoxNjU4ODQxODIwfQ.9ekbTWaWnTJRKUyfASPqZhHvv8wJfMqxMeAkR7yPzgc
+}
